@@ -5,19 +5,19 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  
 <mapper namespace="com.example.demo.board.mapper.BoardMapper">
  
-    <select id="boardCount" resultType="int">
+    <select id= "boardCount" resultType="int">
         SELECT
             COUNT(*)
         FROM BOARD
     </select>
     
-    <select id="boardList" resultType="com.example.demo.board.domain.BoardVO">
+    <select id= "boardList" resultType="com.example.demo.board.domain.BoardVO">
         SELECT
             *
         FROM BOARD
     </select>
     
-    <select id="boardDetail"  parameterType="int" resultType="com.example.demo.board.domain.BoardVO">
+    <select id= "boardDetail"  parameterType="int" resultType="com.example.demo.board.domain.BoardVO">
         SELECT
             *
         FROM BOARD
@@ -25,10 +25,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         	BNO =#{bno}
     </select>
 
- 	<insert id="boardInsert" parameterType="com.example.demo.board.domain.BoardVO">
+ 	<insert id = "boardInsert" parameterType="com.example.demo.board.domain.BoardVO">
         INSERT INTO
-        BOARD (BNO, SUBJECT,CONTENT,WRITER,REG_DATE)
-        VALUES(#{bno},#{subject},#{content},#{writer},now()) 
+        BOARD (BNO,SUBJECT,CONTENT,WRITER,CREATED_DATE)
+        VALUES (#{bno},#{subject},#{content},#{writer},now())
     </insert>
     
     <update id="boardUpdate" parameterType="com.example.demo.board.domain.BoardVO">

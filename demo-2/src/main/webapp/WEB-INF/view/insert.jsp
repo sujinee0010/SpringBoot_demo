@@ -18,11 +18,11 @@
       </div>
       <div class="form-group">
         <label for="writer">작성자</label>
-        <input type="text" class="form-control" id="writer" name="writer" placeholder="내용을 입력하세요.">
+        <input type="text" class="form-control" id="writer" name="writer" placeholder="이름을 입력하세요.">
       </div>
       <div class="form-group">
-        <label for=content">내용</label>
-        <textarea class="form-control" id="content" name="content" rows="3"></textarea>
+        <label for="content">내용</label>
+        <textarea class="form-control" id="content" name="content"  rows="3"> </textarea>
       </div>
       <button type="submit" class="btn btn-primary">작성</button>
     </form>

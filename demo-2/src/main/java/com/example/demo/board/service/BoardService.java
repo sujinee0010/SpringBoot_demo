@@ -13,7 +13,12 @@ public class BoardService {
  
     @Resource(name="com.example.demo.board.mapper.BoardMapper")
     BoardMapper mBoardMapper;
-    
+
+    public int boardCount() throws Exception{
+
+     return mBoardMapper.boardCount();
+
+    }
     public List<BoardVO> boardListService() throws Exception{
         
         return mBoardMapper.boardList();

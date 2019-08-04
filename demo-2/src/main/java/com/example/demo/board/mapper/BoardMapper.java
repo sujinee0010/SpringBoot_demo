@@ -2,10 +2,11 @@ package com.example.demo.board.mapper;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
-
 import com.example.demo.board.domain.BoardVO;
-//해당 클래스가 데이터베이스에 접근하는 클래스임을 압시 
+//해당 클래스가 데이터베이스에 접근하는 클래스임을 압시
+@Mapper
 @Repository("com.example.demo.board.mapper.BoardMapper")
 public interface BoardMapper {
 	// 게시글 개수
